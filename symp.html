@@ -1,0 +1,234 @@
+<!Doctype html>
+<html>
+<head>
+<Title>Disease Predictor</Title>
+<link rel = "stylesheet" href = "/css/symp.css">
+</head>
+<body>
+
+<script></script>
+
+
+<header>
+	<div class="container">
+		<div id="branding">
+			<h1><span class="highlight"> Prognostication Of Diseases</h1>
+		</div>
+		<nav>
+			<ul>
+				<li class="current">
+					<form action = "/home">
+					<input type="submit" class = "home" value="Home" />
+					</form>
+				</li>
+
+				<li class="current">
+					<form action = "/info">
+					<input type="submit" class = "info" value="Info" />
+					</form>
+				</li>
+
+				<li class="current">
+					<form action = "/about">
+					<input type="submit"class = "about" value="About Us" />
+					</form>
+				</li>
+
+				<!-- <li class="current"><a href="home.html" style = "color: white">Home</a> </li>
+				<li class = "current"><a href="info.html" style = "color: white;">Info</a> </li>
+				<li class = "current"><a href="about.html" style = "color: white;">About us</a> </li> -->
+			</ul>
+		</nav>
+	</div>
+</header>
+
+<div class = "mainbg">
+
+<div> <h2 class = "heading">Check Your Symptoms Below</h2> </div>
+
+
+
+<form action="/result" method = "POST">
+<table style = "width : 100% ; padding-left : 40px" id = "data">
+	<tr>
+		<td><label class = "symp1">A Persistant Cough
+		<input type = "checkbox" name  = "Cough"></td>			
+		<td><label class = "symp1">Weight Loss
+		<input type = "checkbox" name = "Weight loss"></td>
+		<td><label class = "symp1">Fever
+		<input type = "checkbox" name = "Fever"></td>
+		<td><label class = "symp1">Coughing of Blood
+		<input type = "checkbox" name = "Blood"></td>
+		<td><label class = "symp1">Loose Motions
+		<input type = "checkbox" name = "Motions"></td>
+	</tr>
+
+	<tr>
+	<td><label class = "symp2">Abdominal Cramps
+		<input type = "checkbox" name = "Cramps"></td>
+	<td><label class = "symp2">Abdominal Pain
+		<input type = "checkbox" name = "Abdominal Pain"></td>
+	<td><label class = "symp2">Bloating
+		<input type = "checkbox" name = "Bloating"></td>
+	<td><label class = "symp2"> High Fever
+		<input type = "checkbox" name = "High GFever"></td>
+	<td><label class = "symp2">Headache
+		<input type = "checkbox" name = "Headache"></td>
+	
+	</tr>
+
+
+	<tr>
+	<td><label class = "symp3">Eyes Pain
+		<input type = "checkbox" name = "Eyes Pain"></td>
+	<td><label class = "symp3">Joint Pain 
+		<input type = "checkbox"name = "Joint Pain"></td>
+	<td><label class = "symp3">Muscle Pain
+		<input type = "checkbox"name = "Muscle Pain"></td>
+	<td><label class = "symp3">Chills
+		<input type = "checkbox" name = "Chills"></td>
+	<td><label class = "symp3">Weakness
+		<input type = "checkbox" name = "Weakness"></td>		
+	</tr>
+		
+	
+	<tr>
+	<td><label class = "symp4">Yellowish Skin
+		<input type = "checkbox" name = "Yellowish"></td>
+	<td><label class = "symp4">Dark Coloured Urine
+		<input type = "checkbox" name = "Dark Urine"></td>
+	<td><label class = "symp4"> Running Noes
+		<input type = "checkbox" name = "Running Noes"></td>
+	<td><label class = "symp4">Sweat 
+		<input type = "checkbox" name = "Sweat"></td>
+	<td><label class = 	"symp4">Over Apettite
+		<input type = "checkbox" name = "Over Apettite"></td>		
+	</tr>
+	
+	
+	
+	
+	<tr>
+	<td><label class = "symp5">Shortness of Breathe 
+		<input type = "checkbox"name = "Breathe"></td>
+	<td><label class = "symp5">Chest Pain
+		<input type = "checkbox"name = "Chest Pain"></td>
+	<td><label class = "symp5"> Cough
+		<input type = "checkbox" name = "Cough"></td>
+	<td><label class = "symp5">Vomiting
+		<input type = "checkbox" name = "Vomiting"></td>
+	<td><label class = "symp5">Blood in the Urine
+		<input type = "checkbox" name = "Blood Urine"></td>
+	</tr>
+	
+	<tr>
+	<td><label class = "symp6">Urine Smell
+		<input type = "checkbox" name = "Roshan"></td>
+	<td><label class = "symp6">Frequent Urination
+		<input type = "checkbox" name = "Frequent Urination"></td>
+	<td><label class = "symp6">Increased Thirst
+		<input type = "checkbox" name = "Increased Thirst"></td>
+	<td><label class = "symp6">Blood in ths Stool
+		<input type = "checkbox" name = "Blood Stool"></td>
+	<td><label class = "symp6">Mucus in the stool
+		<input type = "checkbox" name = "Mucus Stool"></td>
+	</tr>
+	
+	<tr>
+	<td><label class = "symp7"> Blurred Vision
+		<input type = "checkbox" name = "Blurred Vision"></td>
+	<td><label class = "symp7">Diarhoea
+		<input type = "checkbox" name = "Diarhoea"></td>
+	<td><label class = "symp7">Lethargy
+		<input type = "checkbox" name = "Lethargy"></td>
+	<td><label class = "symp7">Low Blood Pressue
+		<input type = "checkbox" name = "Low Blood Pressue"></td>
+	<td><label class = "symp7"> Nausea
+		<input type = "checkbox" name = "Nausea"></td>
+	</tr>
+	
+	
+	<tr>
+	
+	<td><label class = "symp8">Watery Stool
+		<input type = "checkbox" name = "Watery Stool"></td>
+	<td><label class = "symp8">Night Sweats
+		<input type = "checkbox" name = "Night Sweats"></td>
+	<td><label class = "symp8">Urgent Bowel
+		<input type = "checkbox" name = "Urgent Bowel"></td>
+	<td><label class = "symp8">Mild Bleeding
+		<input type = "checkbox" name = "Mild Bleeding"></td>
+	<td><label class = "symp8">Itching
+		<input type = "checkbox" name = "Itching"></td>
+	</tr>
+	
+	
+</table>
+	<button type = "submit"  class =" submit" id = "submit" onclick="return submit()">Submit</button>
+
+
+
+
+
+</div>
+
+
+
+
+</section>
+<footer>
+	<p>Prognostication of diseases, Copyright &copy; 2020</p>
+</footer>
+
+
+<script type = "text/javascript" >
+
+
+function submit(){
+
+//Referencing the table
+ var grid = document.getElementById("data");
+
+//Referencing checkboxes
+var checkboxes = grid.getElementsByTagName("input");
+var message = "Are you sure with your symptoms?? \n";
+console.log(checkboxes);
+//loop through the checkboxes
+
+for (var i = 0; i < checkboxes.length; i++){
+	if  (checkboxes[i].checked==true ) {
+		// alert("Symtoms: " +checkboxes[i].id);
+		console.log('selected',checkboxes[i].id)
+		message += checkboxes[i].id + "\n"
+
+
+
+		
+		console.log(localStorage);
+
+	}
+	
+}
+console.log("Output", message)
+if (message == "Are you sure with your symptoms?? \n") {
+	alert("You must select atleast one symptom");
+}
+
+
+
+else if(confirm(message)){
+	window.location = "output.html";
+}	
+
+
+}
+
+// document.getElementById('submitBtn').addEventListener('click',submit)
+
+</script>
+
+
+</body>
+
+
+</html>
